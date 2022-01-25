@@ -1,0 +1,66 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech+Mono&family=Twinkle+Star&display=swap" rel="stylesheet">
+        
+    </head>
+    <body background = "https://media.istockphoto.com/vectors/pixel-video-game-abstract-seamless-background-vector-id1250539480?k=20&m=1250539480&s=612x612&w=0&h=uOB0lCxN2fyG-1RnNt5Ye-6vfgr9yDIsNx4zJzKuQD0=">
+<div class= "btn btn-primary" style="width: 100%;">
+    <h2 style="font-family: 'Audiowide', cursive;
+    "><b>AI Ping Pong 🏓</b>
+     <button class = "btn btn-info" style="float: right;" data-toggle = "modal" data-target ="#myModal">INSTRUCTIONS</button></h2> 
+</div>
+<br><br><br>
+<center>
+<img src ="deheutre_0.png" width = "30%" class = "img-circle img-responsive big-image" >
+<br><br><br>
+<button class="btn btn-success" onclick="start()" style="font-family: Share Tech Mono , monospace; font-size: 20px;">Play Game !</button>
+<br><br>
+<button class = " btn btn-warning" id = "status"></button>
+<br><br>
+<button class = "btn btn-primary" onclick= "restart()">
+    <h4>
+    <i>Restart 🔃</i>
+    </h4>
+</button>
+<br><br><br>
+<div  id = "myModal" class = "modal fade" >
+    <div class="modal-dialog">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <button class = "close" data-dismiss="modal">&times;</button><h3>Instructions</h3>
+            </div>
+            <div class = "modal-body">
+               1. First keep your laptop screen straight<br>
+2. Move yourself approximately 3-4 feet away from the laptop<br>
+3. Move your right wrist in an ascending and decending manner, a red dot should appear on your right wrist<br>
+4. Now press the play button, and again move yourself 3-4 feet away from laptop<br>
+5. The red paddel is your paddle, that will move as per the movement of your right wrist 
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "canvas"></div>
+<div class = "copy_right_footer">
+   <h4> AI Credit : AM <br>
+    Game Credit : GameWint<br>
+    Logo Credit : <a href = "https://smallseotools.com/logo-maker/">Small Seo Tools</a>
+    </h4>
+</div>
+</center>
+        <script src="main.js"></script>
+    </body>
+</html>

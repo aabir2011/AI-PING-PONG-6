@@ -1,0 +1,17 @@
+.copy_right_footer{
+    background-color:whitesmoke;
+    padding-bottom: 0.013px;
+    position: sticky;
+    font-family:  'Audiowide', cursive;
+    
+}
+canvas{
+    border-radius: 20px;
+    border-color: white;
+    border-style:ridge;
+    border-width: 10px;
+}
+.modal-content{
+    width : 100%;
+    background-image:linear-gradient(skyblue,rgb(115, 115, 247));
+}
